@@ -15,6 +15,8 @@
 		E16440F227907F79001D224E /* TodoVer2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */; };
 		E16440FA27919FE1001D224E /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440F927919FE1001D224E /* CategoryImage.swift */; };
 		E16440FC2791AABC001D224E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440FB2791AABC001D224E /* CheckBox.swift */; };
+		E16440FF2793423D001D224E /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440FE2793423D001D224E /* Color+Extention.swift */; };
+		E1644101279344D1001D224E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1644100279344D1001D224E /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E16440F827907FA8001D224E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E16440F927919FE1001D224E /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
 		E16440FB2791AABC001D224E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		E16440FE2793423D001D224E /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
+		E1644100279344D1001D224E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,13 @@
 		E16440E427907F77001D224E /* TodoVer2 */ = {
 			isa = PBXGroup;
 			children = (
+				E16440FD27934207001D224E /* Extention */,
 				E16440F827907FA8001D224E /* Info.plist */,
 				E16440E527907F77001D224E /* TodoVer2App.swift */,
 				E16440E727907F77001D224E /* ContentView.swift */,
 				E16440F927919FE1001D224E /* CategoryImage.swift */,
 				E16440FB2791AABC001D224E /* CheckBox.swift */,
+				E1644100279344D1001D224E /* UserView.swift */,
 				E16440E927907F79001D224E /* Assets.xcassets */,
 				E16440EE27907F79001D224E /* Persistence.swift */,
 				E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */,
@@ -79,6 +85,14 @@
 				E16440EC27907F79001D224E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E16440FD27934207001D224E /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				E16440FE2793423D001D224E /* Color+Extention.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,8 @@
 			files = (
 				E16440EF27907F79001D224E /* Persistence.swift in Sources */,
 				E16440E827907F77001D224E /* ContentView.swift in Sources */,
+				E16440FF2793423D001D224E /* Color+Extention.swift in Sources */,
+				E1644101279344D1001D224E /* UserView.swift in Sources */,
 				E16440FC2791AABC001D224E /* CheckBox.swift in Sources */,
 				E16440F227907F79001D224E /* TodoVer2.xcdatamodeld in Sources */,
 				E16440FA27919FE1001D224E /* CategoryImage.swift in Sources */,
