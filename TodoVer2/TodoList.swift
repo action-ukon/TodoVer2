@@ -23,7 +23,9 @@ struct TodoList: View {
         VStack {
             List {
                 ForEach(todoList) {todo in
-                    Text(todo.task ?? "no title")
+                    if todo.category == self.category.rawValue {
+                        Text(todo.task ?? "no title")
+                    }
                 }
             }
             QuickNewTask(category: category)

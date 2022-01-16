@@ -21,6 +21,7 @@
 		E1644105279363E0001D224E /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1644104279363E0001D224E /* CategoryView.swift */; };
 		E16441072794083A001D224E /* QuickNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16441062794083A001D224E /* QuickNewTask.swift */; };
 		E164410927942548001D224E /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164410827942548001D224E /* TodoList.swift */; };
+		E164410B27948ED3001D224E /* ToDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164410A27948ED3001D224E /* ToDetailRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E1644104279363E0001D224E /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		E16441062794083A001D224E /* QuickNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNewTask.swift; sourceTree = "<group>"; };
 		E164410827942548001D224E /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		E164410A27948ED3001D224E /* ToDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E1644104279363E0001D224E /* CategoryView.swift */,
 				E16441062794083A001D224E /* QuickNewTask.swift */,
 				E164410827942548001D224E /* TodoList.swift */,
+				E164410A27948ED3001D224E /* ToDetailRow.swift */,
 				E16440E927907F79001D224E /* Assets.xcassets */,
 				E16440EE27907F79001D224E /* Persistence.swift */,
 				E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */,
@@ -185,6 +188,7 @@
 				E16440FF2793423D001D224E /* Color+Extention.swift in Sources */,
 				E1644105279363E0001D224E /* CategoryView.swift in Sources */,
 				E1644101279344D1001D224E /* UserView.swift in Sources */,
+				E164410B27948ED3001D224E /* ToDetailRow.swift in Sources */,
 				E16440FC2791AABC001D224E /* CheckBox.swift in Sources */,
 				E16440F227907F79001D224E /* TodoVer2.xcdatamodeld in Sources */,
 				E16440FA27919FE1001D224E /* CategoryImage.swift in Sources */,

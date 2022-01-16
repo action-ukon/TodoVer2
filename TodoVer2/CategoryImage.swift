@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct CategoryImage: View {
+    
+    var category: TodoEntity.Category
+    
+    init(_ category: TodoEntity.Category?){
+        self.category = category ?? .ImpUrg_1st
+    }
+    
     var body: some View {
-        Image(systemName: "tortoise.fill")
+        Image(systemName: category.image())
             .resizable()
             .scaledToFit()
             .foregroundColor(Color.white)
@@ -22,6 +29,6 @@ struct CategoryImage: View {
 
 struct CategoryImage_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryImage()
+        CategoryImage(TodoEntity.Category.ImpUrg_1st)
     }
 }
