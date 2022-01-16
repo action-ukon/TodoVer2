@@ -22,7 +22,10 @@ struct QuickNewTask: View {
     
     var body: some View {
         HStack {
-            TextField("新しいタスク", text: $newTask)
+            TextField("新しいタスク", text: $newTask) {
+                self.addNewTask()
+            }
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
                 self.addNewTask()
             }) {
@@ -40,6 +43,10 @@ struct QuickNewTask: View {
 
 struct QuickNewTask_Previews: PreviewProvider {
     static var previews: some View {
-        QuickNewTask(category: .ImpUrg_1st)
+        Group {
+            QuickNewTask(category: .ImpUrg_1st)
+            QuickNewTask(category: .ImpUrg_1st)
+            QuickNewTask(category: .ImpUrg_1st)
+        }
     }
 }
