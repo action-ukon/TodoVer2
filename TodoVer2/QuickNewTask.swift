@@ -11,8 +11,12 @@ struct QuickNewTask: View {
     let category: TodoEntity.Category
     
     @State var newTask: String = ""
+    // データベース操作
+    @Environment(\.managedObjectContext) var viewContext
     
     fileprivate func addNewTask() {
+        // データ追加
+        TodoEntity.create(in: self.viewContext, category: self.category, task: self.newTask)
         self.newTask = ""
     }
     
@@ -26,10 +30,12 @@ struct QuickNewTask: View {
                 self.addNewTask()
             }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .foregroundColor(.black)
             Button(action: {
                 self.addNewTask()
             }) {
                 Text("追加")
+                    .foregroundColor(.blue)
             }
             Button(action: {
                 self.cancelTask()
@@ -42,11 +48,12 @@ struct QuickNewTask: View {
 }
 
 struct QuickNewTask_Previews: PreviewProvider {
+    static let context = PersistenceController.shared.container.viewContext
     static var previews: some View {
         Group {
             QuickNewTask(category: .ImpUrg_1st)
-            QuickNewTask(category: .ImpUrg_1st)
-            QuickNewTask(category: .ImpUrg_1st)
+            // DB操作
+                .environment(\.managedObjectContext, context)
         }
     }
 }
