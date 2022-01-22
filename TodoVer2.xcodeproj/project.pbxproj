@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E162D098279A60A700707369 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D097279A60A700707369 /* NewTask.swift */; };
 		E16440E627907F77001D224E /* TodoVer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E527907F77001D224E /* TodoVer2App.swift */; };
 		E16440E827907F77001D224E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E727907F77001D224E /* ContentView.swift */; };
 		E16440EA27907F79001D224E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16440E927907F79001D224E /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E162D097279A60A700707369 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		E16440E227907F77001D224E /* TodoVer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoVer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16440E527907F77001D224E /* TodoVer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVer2App.swift; sourceTree = "<group>"; };
 		E16440E727907F77001D224E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				E16441062794083A001D224E /* QuickNewTask.swift */,
 				E164410827942548001D224E /* TodoList.swift */,
 				E164410A27948ED3001D224E /* ToDetailRow.swift */,
+				E162D097279A60A700707369 /* NewTask.swift */,
 				E16440E927907F79001D224E /* Assets.xcassets */,
 				E16440EE27907F79001D224E /* Persistence.swift */,
 				E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */,
@@ -189,6 +192,7 @@
 				E1644105279363E0001D224E /* CategoryView.swift in Sources */,
 				E1644101279344D1001D224E /* UserView.swift in Sources */,
 				E164410B27948ED3001D224E /* ToDetailRow.swift in Sources */,
+				E162D098279A60A700707369 /* NewTask.swift in Sources */,
 				E16440FC2791AABC001D224E /* CheckBox.swift in Sources */,
 				E16440F227907F79001D224E /* TodoVer2.xcdatamodeld in Sources */,
 				E16440FA27919FE1001D224E /* CategoryImage.swift in Sources */,
