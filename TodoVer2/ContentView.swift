@@ -32,7 +32,10 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let context = PersistenceController.shared.container.viewContext
+    
     static var previews: some View {
         ContentView()
+            .environment(\.managedObjectContext, context)
     }
 }
