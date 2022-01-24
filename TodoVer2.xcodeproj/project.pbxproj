@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E162D098279A60A700707369 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D097279A60A700707369 /* NewTask.swift */; };
 		E162D09C279D78A600707369 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D09B279D78A600707369 /* Binding+Extension.swift */; };
+		E162D09E279ED25000707369 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D09D279ED24F00707369 /* EditTask.swift */; };
 		E16440E627907F77001D224E /* TodoVer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E527907F77001D224E /* TodoVer2App.swift */; };
 		E16440E827907F77001D224E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E727907F77001D224E /* ContentView.swift */; };
 		E16440EA27907F79001D224E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16440E927907F79001D224E /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		E162D097279A60A700707369 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		E162D09B279D78A600707369 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		E162D09D279ED24F00707369 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
 		E16440E227907F77001D224E /* TodoVer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoVer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16440E527907F77001D224E /* TodoVer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVer2App.swift; sourceTree = "<group>"; };
 		E16440E727907F77001D224E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				E164410827942548001D224E /* TodoList.swift */,
 				E164410A27948ED3001D224E /* ToDetailRow.swift */,
 				E162D097279A60A700707369 /* NewTask.swift */,
+				E162D09D279ED24F00707369 /* EditTask.swift */,
 				E16440E927907F79001D224E /* Assets.xcassets */,
 				E16440EE27907F79001D224E /* Persistence.swift */,
 				E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */,
@@ -188,6 +191,7 @@
 			files = (
 				E16440EF27907F79001D224E /* Persistence.swift in Sources */,
 				E16441072794083A001D224E /* QuickNewTask.swift in Sources */,
+				E162D09E279ED25000707369 /* EditTask.swift in Sources */,
 				E16441032793634B001D224E /* TodoEntity+Extention.swift in Sources */,
 				E164410927942548001D224E /* TodoList.swift in Sources */,
 				E162D09C279D78A600707369 /* Binding+Extension.swift in Sources */,
