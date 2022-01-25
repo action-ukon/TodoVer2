@@ -18,6 +18,20 @@ struct TodoList: View {
         animation: .default)
     var todoList: FetchedResults<TodoEntity>
     
+    @Environment(\.managedObjectContext) var viewContext
+    
+    fileprivate func deleteTodo(at offsets: IndexSet) {
+        for index in offsets {
+            let entity = todoList[index]
+            viewContext.delete(entity)
+        }
+        do {
+            try viewContext.save()
+        } catch {
+            print("Delete Error. \(offsets)")
+        }
+    }
+    
     let category: TodoEntity.Category
     var body: some View {
         NavigationView {
@@ -25,16 +39,17 @@ struct TodoList: View {
                 List {
                     ForEach(todoList) {todo in
                         if todo.category == self.category.rawValue {
-                            //destination他のファイル見にいく
+                            //NavigationLink(destination他のファイル見にいく
                             NavigationLink(destination: EditTask(todo: todo)) {
                                 TodoDetailRow(todo: todo, hideIcon: true)
                             }
                         }
-                    }
+                    }.onDelete(perform: deleteTodo)
                 }
                 QuickNewTask(category: category)
                 .padding()
-            }
+            }.navigationBarTitle(category.toString())
+                .navigationBarItems(trailing: EditButton())
         }
     }
 }
