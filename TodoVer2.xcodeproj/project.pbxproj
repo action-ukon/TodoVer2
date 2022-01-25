@@ -12,6 +12,8 @@
 		E162D09E279ED25000707369 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D09D279ED24F00707369 /* EditTask.swift */; };
 		E162D0A027A0271A00707369 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D09F27A0271A00707369 /* TaskToday.swift */; };
 		E162D0A227A027DF00707369 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D0A127A027DF00707369 /* Date+Extension.swift */; };
+		E162D0A627A0704400707369 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D0A527A0704400707369 /* KeyboardObserver.swift */; };
+		E162D0A827A070FA00707369 /* UIApprication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162D0A727A070FA00707369 /* UIApprication+Extension.swift */; };
 		E16440E627907F77001D224E /* TodoVer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E527907F77001D224E /* TodoVer2App.swift */; };
 		E16440E827907F77001D224E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16440E727907F77001D224E /* ContentView.swift */; };
 		E16440EA27907F79001D224E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16440E927907F79001D224E /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		E162D09D279ED24F00707369 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
 		E162D09F27A0271A00707369 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
 		E162D0A127A027DF00707369 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E162D0A527A0704400707369 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		E162D0A727A070FA00707369 /* UIApprication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApprication+Extension.swift"; sourceTree = "<group>"; };
 		E16440E227907F77001D224E /* TodoVer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoVer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16440E527907F77001D224E /* TodoVer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVer2App.swift; sourceTree = "<group>"; };
 		E16440E727907F77001D224E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				E162D097279A60A700707369 /* NewTask.swift */,
 				E162D09D279ED24F00707369 /* EditTask.swift */,
 				E162D09F27A0271A00707369 /* TaskToday.swift */,
+				E162D0A527A0704400707369 /* KeyboardObserver.swift */,
 				E16440E927907F79001D224E /* Assets.xcassets */,
 				E16440EE27907F79001D224E /* Persistence.swift */,
 				E16440F027907F79001D224E /* TodoVer2.xcdatamodeld */,
@@ -121,6 +126,7 @@
 				E16441022793634B001D224E /* TodoEntity+Extention.swift */,
 				E162D09B279D78A600707369 /* Binding+Extension.swift */,
 				E162D0A127A027DF00707369 /* Date+Extension.swift */,
+				E162D0A727A070FA00707369 /* UIApprication+Extension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				E164410927942548001D224E /* TodoList.swift in Sources */,
 				E162D09C279D78A600707369 /* Binding+Extension.swift in Sources */,
 				E16440E827907F77001D224E /* ContentView.swift in Sources */,
+				E162D0A627A0704400707369 /* KeyboardObserver.swift in Sources */,
 				E162D0A027A0271A00707369 /* TaskToday.swift in Sources */,
 				E16440FF2793423D001D224E /* Color+Extention.swift in Sources */,
 				E1644105279363E0001D224E /* CategoryView.swift in Sources */,
@@ -210,6 +217,7 @@
 				E162D098279A60A700707369 /* NewTask.swift in Sources */,
 				E16440FC2791AABC001D224E /* CheckBox.swift in Sources */,
 				E16440F227907F79001D224E /* TodoVer2.xcdatamodeld in Sources */,
+				E162D0A827A070FA00707369 /* UIApprication+Extension.swift in Sources */,
 				E16440FA27919FE1001D224E /* CategoryImage.swift in Sources */,
 				E16440E627907F77001D224E /* TodoVer2App.swift in Sources */,
 				E162D0A227A027DF00707369 /* Date+Extension.swift in Sources */,
