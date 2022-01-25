@@ -13,6 +13,10 @@ struct CategoryView: View {
     @State var showList = false
     @Environment(\.managedObjectContext) var viewContext
     @State var addNewtask = false
+    fileprivate func update() {
+        self.numberOfTasks = TodoEntity.count(in: self.viewContext, category: self.category)
+    }
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -20,7 +24,7 @@ struct CategoryView: View {
                     .font(.largeTitle)
                 // クロージャ　　シートの表示非表示を判断isPresented
                 // $は同ファイルの値同期
-                    .sheet(isPresented: $showList) {
+                    .sheet(isPresented: $showList, onDismiss: {update()}) {
                         TodoList(category: self.category)
                         //データベースを動作させる
                             .environment(\.managedObjectContext, self.viewContext)
@@ -32,7 +36,7 @@ struct CategoryView: View {
                 }) {
                     Image(systemName: "plus")
                     // めちゃ大事↓
-                }.sheet(isPresented: $addNewtask) {
+                }.sheet(isPresented: $addNewtask, onDismiss: {update()}) {
                     NewTask(category: self.category.rawValue)
                         .environment(\.managedObjectContext, self.viewContext)
                 }
@@ -47,7 +51,7 @@ struct CategoryView: View {
                 self.showList = true
             }
             .onAppear {
-                self.numberOfTasks = TodoEntity.count(in: self.viewContext, category: self.category)
+                update()
             }
         }
     }

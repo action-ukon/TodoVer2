@@ -69,6 +69,7 @@ struct NewTask: View {
                     Text("保存")
                         .foregroundColor(.blue)
                 })
+            
         }
     }
 }
