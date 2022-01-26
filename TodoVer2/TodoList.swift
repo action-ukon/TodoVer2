@@ -51,7 +51,7 @@ struct TodoList: View {
                 QuickNewTask(category: category)
                 .padding()
             }.navigationBarTitle(category.toString())
-                .navigationBarItems(trailing: EditButton())
+                .navigationBarItems(trailing: EditButton().foregroundColor(.blue))
         }.onAppear {
             self.keyboard.startObserve()
             UIApplication.shared.closeKeyboard()
